@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Vocabulary</title>
+    <link rel="stylesheet" href="eng.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.jpeg" alt="Logo" class="logo-img">
+        <span>Learn English Grammar</span>
+      </div>
+      
+      <button class="toggle-btn" id="toggleBtn">&#9776;</button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="eng.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>English Sentances</th>
+            <th>Urdu Pronunciation</th>
+            <th>Meaning in Urdu</th>
+            <th>Listen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <h1 class="title">Daily life used Sentances</h1>
+
+          <!-- Category 1: Greetings & Politeness -->
+          <tr class="category-heading" data-category="greetings-politeness">
+            <td colspan="4">
+              <h2>
+                <span class="toggle-icon">+</span>
+                1. Greetings & Politeness (سلام و آداب)
+              </h2>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">Good morning!</td>
+            <td data-label="Urdu Pronunciation">گڈ مارننگ</td>
+            <td data-label="Meaning in Urdu">صبح بخیر</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Good morning')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">Good night.</td>
+            <td data-label="Urdu Pronunciation">گڈ نائٹ</td>
+            <td data-label="Meaning in Urdu">شب بخیر</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Good night')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">How are you?</td>
+            <td data-label="Urdu Pronunciation">ہاؤ آر یو</td>
+            <td data-label="Meaning in Urdu">آپ کیسے ہیں؟</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('How are you')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">I'm fine, thank you.</td>
+            <td data-label="Urdu Pronunciation">آئی ایم فائن، تھینک یو</td>
+            <td data-label="Meaning in Urdu">میں ٹھیک ہوں، شکریہ</td>
+            <td>
+              <button
+                class="listen-btn"
+                onclick="speakWord('I am fine thank you')"
+              >
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">Have a nice day.</td>
+            <td data-label="Urdu Pronunciation">ہیو اے نائس ڈے</td>
+            <td data-label="Meaning in Urdu">آپ کا دن اچھا گزرے</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Have a nice day')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">See you soon.</td>
+            <td data-label="Urdu Pronunciation">سی یو سون</td>
+            <td data-label="Meaning in Urdu">جلدی ملتے ہیں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('See you soon')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">Take care.</td>
+            <td data-label="Urdu Pronunciation">ٹیک کیئر</td>
+            <td data-label="Meaning in Urdu">اپنا خیال رکھیں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Take care')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">Welcome!</td>
+            <td data-label="Urdu Pronunciation">ویلکم</td>
+            <td data-label="Meaning in Urdu">خوش آمدید</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Welcome')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">Long time no see.</td>
+            <td data-label="Urdu Pronunciation">لانگ ٹائم نو سی</td>
+            <td data-label="Meaning in Urdu">کافی عرصے بعد ملاقات ہوئی</td>
+            <td>
+              <button
+                class="listen-btn"
+                onclick="speakWord('Long time no see')"
+              >
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">Nice to meet you.</td>
+            <td data-label="Urdu Pronunciation">نائس ٹو میٹ یو</td>
+            <td data-label="Meaning in Urdu">آپ سے مل کر خوشی ہوئی</td>
+            <td>
+              <button
+                class="listen-btn"
+                onclick="speakWord('Nice to meet you')"
+              >
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">How have you been?</td>
+            <td data-label="Urdu Pronunciation">ہاؤ ہیو یو بین</td>
+            <td data-label="Meaning in Urdu">آپ کیسے رہے ہیں؟</td>
+            <td>
+              <button
+                class="listen-btn"
+                onclick="speakWord('How have you been')"
+              >
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">It's nice to see you.</td>
+            <td data-label="Urdu Pronunciation">اٹس نائس ٹو سی یو</td>
+            <td data-label="Meaning in Urdu">آپ کو دیکھ کر خوشی ہوئی</td>
+            <td>
+              <button
+                class="listen-btn"
+                onclick="speakWord('It is nice to see you')"
+              >
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">Pleased to meet you.</td>
+            <td data-label="Urdu Pronunciation">پلیزڈ ٹو میٹ یو</td>
+            <td data-label="Meaning in Urdu">آپ سے مل کر خوشی ہوئی</td>
+            <td>
+              <button
+                class="listen-btn"
+                onclick="speakWord('Pleased to meet you')"
+              >
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">Have a good evening.</td>
+            <td data-label="Urdu Pronunciation">ہیو اے گڈ ایوننگ</td>
+            <td data-label="Meaning in Urdu">آپ کی شام اچھی گزرے</td>
+            <td>
+              <button
+                class="listen-btn"
+                onclick="speakWord('Have a good evening')"
+              >
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">Hope you are doing well.</td>
+            <td data-label="Urdu Pronunciation">ہوپ یو آر ڈوئنگ ویل</td>
+            <td data-label="Meaning in Urdu">امید ہے آپ خیریت سے ہیں</td>
+            <td>
+              <button
+                class="listen-btn"
+                onclick="speakWord('Hope you are doing well')"
+              >
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">See you later.</td>
+            <td data-label="Urdu Pronunciation">سی یو لیٹر</td>
+            <td data-label="Meaning in Urdu">پھر ملتے ہیں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('See you later')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">It's been a while.</td>
+            <td data-label="Urdu Pronunciation">اٹس بین اے وائل</td>
+            <td data-label="Meaning in Urdu">کافی عرصہ ہو گیا ہے</td>
+            <td>
+              <button
+                class="listen-btn"
+                onclick="speakWord('It has been a while')"
+              >
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">Glad to see you.</td>
+            <td data-label="Urdu Pronunciation">گلیڈ ٹو سی یو</td>
+            <td data-label="Meaning in Urdu">آپ کو دیکھ کر خوشی ہوئی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Glad to see you')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">All the best!</td>
+            <td data-label="Urdu Pronunciation">آل دی بیسٹ</td>
+            <td data-label="Meaning in Urdu">نیک تمنائیں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('All the best')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="greetings-politeness">
+            <td data-label="English Word">Goodbye!</td>
+            <td data-label="Urdu Pronunciation">گڈ بائے</td>
+            <td data-label="Meaning in Urdu">خدا حافظ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Goodbye')">
+                🔊
+              </button>
+            </td>
+          </tr>
+
+          <!--================================ Category 2: Daily Routine ====================-->
+<tr class="category-heading" data-category="daily-routine">
+    <td colspan="4">
+      <h2>
+        <span class="toggle-icon">+</span>
+        2. Daily Routine (روزمرہ کی زندگی)
+      </h2>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I wake up early.</td>
+    <td data-label="Urdu Pronunciation">آئی ویک اپ ارلی</td>
+    <td data-label="Meaning in Urdu">میں جلدی اٹھتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I wake up early')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I brush my teeth.</td>
+    <td data-label="Urdu Pronunciation">آئی برش مائی ٹیتھ</td>
+    <td data-label="Meaning in Urdu">میں اپنے دانت صاف کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I brush my teeth')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I take a shower.</td>
+    <td data-label="Urdu Pronunciation">آئی ٹیک اے شاور</td>
+    <td data-label="Meaning in Urdu">میں نہاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I take a shower')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I get dressed.</td>
+    <td data-label="Urdu Pronunciation">آئی گیٹ ڈریسڈ</td>
+    <td data-label="Meaning in Urdu">میں کپڑے پہنتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I get dressed')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I have breakfast.</td>
+    <td data-label="Urdu Pronunciation">آئی ہیو بریک فاسٹ</td>
+    <td data-label="Meaning in Urdu">میں ناشتہ کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I have breakfast')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I go to work.</td>
+    <td data-label="Urdu Pronunciation">آئی گو ٹو ورک</td>
+    <td data-label="Meaning in Urdu">میں کام پر جاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I go to work')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I go to school.</td>
+    <td data-label="Urdu Pronunciation">آئی گو ٹو اسکول</td>
+    <td data-label="Meaning in Urdu">میں اسکول جاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I go to school')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I study every day.</td>
+    <td data-label="Urdu Pronunciation">آئی اسٹڈی ایوری ڈے</td>
+    <td data-label="Meaning in Urdu">میں روز پڑھائی کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I study every day')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I eat lunch at 1 p.m.</td>
+    <td data-label="Urdu Pronunciation">آئی ایٹ لنچ ایٹ ون پی ایم</td>
+    <td data-label="Meaning in Urdu">میں دوپہر کا کھانا ایک بجے کھاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I eat lunch at 1 p.m.')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I take a short break.</td>
+    <td data-label="Urdu Pronunciation">آئی ٹیک اے شورٹ بریک</td>
+    <td data-label="Meaning in Urdu">میں تھوڑی دیر کا وقفہ لیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I take a short break')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I return home in the evening.</td>
+    <td data-label="Urdu Pronunciation">آئی ریٹرن ہوم ان دی ایوننگ</td>
+    <td data-label="Meaning in Urdu">میں شام کو گھر آتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I return home in the evening')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I have tea in the evening.</td>
+    <td data-label="Urdu Pronunciation">آئی ہیو ٹی ان دی ایوننگ</td>
+    <td data-label="Meaning in Urdu">میں شام کو چائے پیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I have tea in the evening')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I spend time with my family.</td>
+    <td data-label="Urdu Pronunciation">آئی اسپینڈ ٹائم ود مائی فیملی</td>
+    <td data-label="Meaning in Urdu">میں اپنے خاندان کے ساتھ وقت گزارتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I spend time with my family')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I watch TV at night.</td>
+    <td data-label="Urdu Pronunciation">آئی واچ ٹی وی ایٹ نائٹ</td>
+    <td data-label="Meaning in Urdu">میں رات کو ٹی وی دیکھتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I watch TV at night')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I read a book before bed.</td>
+    <td data-label="Urdu Pronunciation">آئی ریڈ اے بک بیفور بیڈ</td>
+    <td data-label="Meaning in Urdu">سونے سے پہلے کتاب پڑھتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I read a book before bed')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I sleep at 10 p.m.</td>
+    <td data-label="Urdu Pronunciation">آئی سلیپ ایٹ ٹین پی ایم</td>
+    <td data-label="Meaning in Urdu">میں رات دس بجے سوتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I sleep at 10 p.m.')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I clean my room.</td>
+    <td data-label="Urdu Pronunciation">آئی کلین مائی روم</td>
+    <td data-label="Meaning in Urdu">میں اپنا کمرہ صاف کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I clean my room')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I exercise in the morning.</td>
+    <td data-label="Urdu Pronunciation">آئی ایکسرسائز ان دی مارننگ</td>
+    <td data-label="Meaning in Urdu">میں صبح ورزش کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I exercise in the morning')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I cook food.</td>
+    <td data-label="Urdu Pronunciation">آئی کک فوڈ</td>
+    <td data-label="Meaning in Urdu">میں کھانا پکاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I cook food')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="daily-routine">
+    <td data-label="English Word">I water the plants.</td>
+    <td data-label="Urdu Pronunciation">آئی واٹر دی پلانٹس</td>
+    <td data-label="Meaning in Urdu">میں پودوں کو پانی دیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I water the plants')">
+        🔊
+      </button>
+    </td>
+  </tr>
+
+         <!--============================ Category 3: Travel & Transport ============-->
+<tr class="category-heading" data-category="travel-transport">
+    <td colspan="4">
+      <h2>
+        <span class="toggle-icon">+</span>
+        3. Travel & Transport (سفر اور نقل و حمل)
+      </h2>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I take the bus to work.</td>
+    <td data-label="Urdu Pronunciation">آئی ٹیک دی بس ٹو ورک</td>
+    <td data-label="Meaning in Urdu">میں کام پر جانے کے لیے بس لیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I take the bus to work')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I travel by train.</td>
+    <td data-label="Urdu Pronunciation">آئی ٹریول بائی ٹرین</td>
+    <td data-label="Meaning in Urdu">میں ٹرین سے سفر کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I travel by train')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I book a taxi.</td>
+    <td data-label="Urdu Pronunciation">آئی بک اے ٹیکسی</td>
+    <td data-label="Meaning in Urdu">میں ٹیکسی بک کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I book a taxi')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I drive a car.</td>
+    <td data-label="Urdu Pronunciation">آئی ڈرائیو اے کار</td>
+    <td data-label="Meaning in Urdu">میں گاڑی چلاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I drive a car')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I ride a bicycle.</td>
+    <td data-label="Urdu Pronunciation">آئی رائیڈ اے بائیسکل</td>
+    <td data-label="Meaning in Urdu">میں سائیکل چلاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I ride a bicycle')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I walk to school.</td>
+    <td data-label="Urdu Pronunciation">آئی واک ٹو اسکول</td>
+    <td data-label="Meaning in Urdu">میں اسکول پیدل جاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I walk to school')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I wait at the bus stop.</td>
+    <td data-label="Urdu Pronunciation">آئی ویٹ ایٹ دی بس اسٹاپ</td>
+    <td data-label="Meaning in Urdu">میں بس اسٹاپ پر انتظار کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I wait at the bus stop')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I miss the train.</td>
+    <td data-label="Urdu Pronunciation">آئی مس دی ٹرین</td>
+    <td data-label="Meaning in Urdu">میں ٹرین مس کر دیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I miss the train')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I buy a ticket.</td>
+    <td data-label="Urdu Pronunciation">آئی بائی اے ٹکٹ</td>
+    <td data-label="Meaning in Urdu">میں ٹکٹ خریدتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I buy a ticket')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I check the timetable.</td>
+    <td data-label="Urdu Pronunciation">آئی چیک دی ٹائم ٹیبل</td>
+    <td data-label="Meaning in Urdu">میں ٹائم ٹیبل چیک کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I check the timetable')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I ask for directions.</td>
+    <td data-label="Urdu Pronunciation">آئی اسک فار ڈائریکشنز</td>
+    <td data-label="Meaning in Urdu">میں راستہ پوچھتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I ask for directions')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I pack my bags.</td>
+    <td data-label="Urdu Pronunciation">آئی پیک مائی بیگز</td>
+    <td data-label="Meaning in Urdu">میں اپنا سامان پیک کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I pack my bags')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I go to the airport.</td>
+    <td data-label="Urdu Pronunciation">آئی گو ٹو دی ایئرپورٹ</td>
+    <td data-label="Meaning in Urdu">میں ایئرپورٹ جاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I go to the airport')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I board the plane.</td>
+    <td data-label="Urdu Pronunciation">آئی بورڈ دی پلین</td>
+    <td data-label="Meaning in Urdu">میں جہاز میں سوار ہوتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I board the plane')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I fasten my seatbelt.</td>
+    <td data-label="Urdu Pronunciation">آئی فاسن مائی سیٹ بیلٹ</td>
+    <td data-label="Meaning in Urdu">میں اپنی سیٹ بیلٹ باندھتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I fasten my seatbelt')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I land safely.</td>
+    <td data-label="Urdu Pronunciation">آئی لینڈ سیفلی</td>
+    <td data-label="Meaning in Urdu">میں محفوظ لینڈ کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I land safely')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I call a ride.</td>
+    <td data-label="Urdu Pronunciation">آئی کال اے رائیڈ</td>
+    <td data-label="Meaning in Urdu">میں سواری بلاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I call a ride')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I share a cab.</td>
+    <td data-label="Urdu Pronunciation">آئی شیر اے کیب</td>
+    <td data-label="Meaning in Urdu">میں کیب شیئر کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I share a cab')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I reach my destination.</td>
+    <td data-label="Urdu Pronunciation">آئی ریچ مائی ڈیسٹینیشن</td>
+    <td data-label="Meaning in Urdu">میں اپنی منزل پر پہنچتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I reach my destination')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="travel-transport">
+    <td data-label="English Word">I return home.</td>
+    <td data-label="Urdu Pronunciation">آئی ریٹرن ہوم</td>
+    <td data-label="Meaning in Urdu">میں گھر واپس آتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I return home')">
+        🔊
+      </button>
+    </td>
+  </tr>
+
+          <!--======================= Category 4: Shopping & Money ====================-->
+<tr class="category-heading" data-category="shopping-money">
+    <td colspan="4">
+      <h2>
+        <span class="toggle-icon">+</span>
+        4. Shopping & Money (خریداری اور پیسے)
+      </h2>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I go shopping.</td>
+    <td data-label="Urdu Pronunciation">آئی گو شاپنگ</td>
+    <td data-label="Meaning in Urdu">میں خریداری کے لیے جاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I go shopping')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I buy vegetables.</td>
+    <td data-label="Urdu Pronunciation">آئی بائی ویجیٹیبلز</td>
+    <td data-label="Meaning in Urdu">میں سبزیاں خریدتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I buy vegetables')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I buy clothes.</td>
+    <td data-label="Urdu Pronunciation">آئی بائی کلاتھز</td>
+    <td data-label="Meaning in Urdu">میں کپڑے خریدتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I buy clothes')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I look for shoes.</td>
+    <td data-label="Urdu Pronunciation">آئی لوک فار شوز</td>
+    <td data-label="Meaning in Urdu">میں جوتے تلاش کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I look for shoes')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I try on the dress.</td>
+    <td data-label="Urdu Pronunciation">آئی ٹرائی آن دی ڈریس</td>
+    <td data-label="Meaning in Urdu">میں لباس پہن کر دیکھتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I try on the dress')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I pay in cash.</td>
+    <td data-label="Urdu Pronunciation">آئی پے ان کیش</td>
+    <td data-label="Meaning in Urdu">میں نقد ادائیگی کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I pay in cash')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I pay by card.</td>
+    <td data-label="Urdu Pronunciation">آئی پے بائی کارڈ</td>
+    <td data-label="Meaning in Urdu">میں کارڈ سے ادائیگی کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I pay by card')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I ask for a discount.</td>
+    <td data-label="Urdu Pronunciation">آئی اسک فار اے ڈسکاؤنٹ</td>
+    <td data-label="Meaning in Urdu">میں رعایت مانگتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I ask for a discount')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I check the price.</td>
+    <td data-label="Urdu Pronunciation">آئی چیک دی پرائس</td>
+    <td data-label="Meaning in Urdu">میں قیمت چیک کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I check the price')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I take a shopping bag.</td>
+    <td data-label="Urdu Pronunciation">آئی ٹیک اے شاپنگ بیگ</td>
+    <td data-label="Meaning in Urdu">میں شاپنگ بیگ لیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I take a shopping bag')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I return the product.</td>
+    <td data-label="Urdu Pronunciation">آئی ریٹرن دی پروڈکٹ</td>
+    <td data-label="Meaning in Urdu">میں چیز واپس کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I return the product')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I exchange the item.</td>
+    <td data-label="Urdu Pronunciation">آئی ایکسچینج دی آئٹم</td>
+    <td data-label="Meaning in Urdu">میں چیز کا تبادلہ کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I exchange the item')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I get the receipt.</td>
+    <td data-label="Urdu Pronunciation">آئی گیٹ دی رسید</td>
+    <td data-label="Meaning in Urdu">میں رسید لیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I get the receipt')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I check my wallet.</td>
+    <td data-label="Urdu Pronunciation">آئی چیک مائی والٹ</td>
+    <td data-label="Meaning in Urdu">میں اپنا بٹوا چیک کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I check my wallet')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I count the money.</td>
+    <td data-label="Urdu Pronunciation">آئی کاؤنٹ دی منی</td>
+    <td data-label="Meaning in Urdu">میں پیسے گنتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I count the money')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I save money.</td>
+    <td data-label="Urdu Pronunciation">آئی سیو منی</td>
+    <td data-label="Meaning in Urdu">میں پیسے بچاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I save money')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I spend too much.</td>
+    <td data-label="Urdu Pronunciation">آئی اسپینڈ ٹو مچ</td>
+    <td data-label="Meaning in Urdu">میں بہت زیادہ خرچ کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I spend too much')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I compare prices.</td>
+    <td data-label="Urdu Pronunciation">آئی کمپیئر پرائسز</td>
+    <td data-label="Meaning in Urdu">میں قیمتوں کا موازنہ کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I compare prices')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I order online.</td>
+    <td data-label="Urdu Pronunciation">آئی آرڈر آن لائن</td>
+    <td data-label="Meaning in Urdu">میں آن لائن آرڈر کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I order online')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="shopping-money">
+    <td data-label="English Word">I shop at the market.</td>
+    <td data-label="Urdu Pronunciation">آئی شاپ ایٹ دی مارکیٹ</td>
+    <td data-label="Meaning in Urdu">میں بازار میں خریداری کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I shop at the market')">
+        🔊
+      </button>
+    </td>
+  </tr>
+
+            <!--=================== Category 5: Food & Drink ========================-->
+<tr class="category-heading" data-category="food-drink">
+    <td colspan="4">
+      <h2>
+        <span class="toggle-icon">+</span>
+        5. Food & Drink (کھانا پینا)
+      </h2>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I eat breakfast.</td>
+    <td data-label="Urdu Pronunciation">آئی ایٹ بریک فاسٹ</td>
+    <td data-label="Meaning in Urdu">میں ناشتہ کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I eat breakfast')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I drink tea.</td>
+    <td data-label="Urdu Pronunciation">آئی ڈرنک ٹی</td>
+    <td data-label="Meaning in Urdu">میں چائے پیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I drink tea')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I have coffee in the morning.</td>
+    <td data-label="Urdu Pronunciation">آئی ہیو کافی ان دی مارننگ</td>
+    <td data-label="Meaning in Urdu">میں صبح کافی پیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I have coffee in the morning')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I eat lunch at noon.</td>
+    <td data-label="Urdu Pronunciation">آئی ایٹ لنچ ایٹ نون</td>
+    <td data-label="Meaning in Urdu">میں دوپہر کو کھانا کھاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I eat lunch at noon')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I drink water.</td>
+    <td data-label="Urdu Pronunciation">آئی ڈرنک واٹر</td>
+    <td data-label="Meaning in Urdu">میں پانی پیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I drink water')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I eat dinner at night.</td>
+    <td data-label="Urdu Pronunciation">آئی ایٹ ڈنر ایٹ نائٹ</td>
+    <td data-label="Meaning in Urdu">میں رات کو کھانا کھاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I eat dinner at night')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I cook food.</td>
+    <td data-label="Urdu Pronunciation">آئی کک فوڈ</td>
+    <td data-label="Meaning in Urdu">میں کھانا پکاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I cook food')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I fry eggs.</td>
+    <td data-label="Urdu Pronunciation">آئی فرائی ایگز</td>
+    <td data-label="Meaning in Urdu">میں انڈے فرائی کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I fry eggs')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I make soup.</td>
+    <td data-label="Urdu Pronunciation">آئی میک سوپ</td>
+    <td data-label="Meaning in Urdu">میں سوپ بناتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I make soup')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I eat fruit.</td>
+    <td data-label="Urdu Pronunciation">آئی ایٹ فروٹ</td>
+    <td data-label="Meaning in Urdu">میں پھل کھاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I eat fruit')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I drink juice.</td>
+    <td data-label="Urdu Pronunciation">آئی ڈرنک جوس</td>
+    <td data-label="Meaning in Urdu">میں جوس پیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I drink juice')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I cut vegetables.</td>
+    <td data-label="Urdu Pronunciation">آئی کٹ ویجیٹیبلز</td>
+    <td data-label="Meaning in Urdu">میں سبزیاں کاٹتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I cut vegetables')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I bake a cake.</td>
+    <td data-label="Urdu Pronunciation">آئی بیک اے کیک</td>
+    <td data-label="Meaning in Urdu">میں کیک بناتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I bake a cake')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I eat bread.</td>
+    <td data-label="Urdu Pronunciation">آئی ایٹ بریڈ</td>
+    <td data-label="Meaning in Urdu">میں روٹی کھاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I eat bread')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I add sugar.</td>
+    <td data-label="Urdu Pronunciation">آئی ایڈ شوگر</td>
+    <td data-label="Meaning in Urdu">میں چینی ڈالتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I add sugar')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I mix the salad.</td>
+    <td data-label="Urdu Pronunciation">آئی مکس دی سلاد</td>
+    <td data-label="Meaning in Urdu">میں سلاد مکس کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I mix the salad')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I eat spicy food.</td>
+    <td data-label="Urdu Pronunciation">آئی ایٹ سپائسی فوڈ</td>
+    <td data-label="Meaning in Urdu">میں مرچ مصالحے والا کھانا کھاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I eat spicy food')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I eat sweets.</td>
+    <td data-label="Urdu Pronunciation">آئی ایٹ سویٹس</td>
+    <td data-label="Meaning in Urdu">میں میٹھا کھاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I eat sweets')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I drink milk.</td>
+    <td data-label="Urdu Pronunciation">آئی ڈرنک ملک</td>
+    <td data-label="Meaning in Urdu">میں دودھ پیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I drink milk')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="food-drink">
+    <td data-label="English Word">I eat rice.</td>
+    <td data-label="Urdu Pronunciation">آئی ایٹ رائس</td>
+    <td data-label="Meaning in Urdu">میں چاول کھاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I eat rice')">
+        🔊
+      </button>
+    </td>
+  </tr>
+
+
+<!-- ======================= Category 6: Health & Body ============================-->
+<tr class="category-heading" data-category="health-body">
+    <td colspan="4">
+      <h2>
+        <span class="toggle-icon">+</span>
+        6. Health & Body (صحت اور جسم)
+      </h2>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I feel sick.</td>
+    <td data-label="Urdu Pronunciation">آئی فیِل سِک</td>
+    <td data-label="Meaning in Urdu">میں بیمار محسوس کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I feel sick')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I have a headache.</td>
+    <td data-label="Urdu Pronunciation">آئی ہیو اے ہیڈ ایک</td>
+    <td data-label="Meaning in Urdu">مجھے سر درد ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I have a headache')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I have a fever.</td>
+    <td data-label="Urdu Pronunciation">آئی ہیو اے فیور</td>
+    <td data-label="Meaning in Urdu">مجھے بخار ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I have a fever')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I have a cough.</td>
+    <td data-label="Urdu Pronunciation">آئی ہیو اے کاف</td>
+    <td data-label="Meaning in Urdu">مجھے کھانسی ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I have a cough')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I take medicine.</td>
+    <td data-label="Urdu Pronunciation">آئی ٹیک میڈیسن</td>
+    <td data-label="Meaning in Urdu">میں دوا لیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I take medicine')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I see a doctor.</td>
+    <td data-label="Urdu Pronunciation">آئی سی اے ڈاکٹر</td>
+    <td data-label="Meaning in Urdu">میں ڈاکٹر کے پاس جاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I see a doctor')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I brush my teeth.</td>
+    <td data-label="Urdu Pronunciation">آئی برش مائی ٹیتھ</td>
+    <td data-label="Meaning in Urdu">میں اپنے دانت برش کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I brush my teeth')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I wash my hands.</td>
+    <td data-label="Urdu Pronunciation">آئی واش مائی ہینڈز</td>
+    <td data-label="Meaning in Urdu">میں اپنے ہاتھ دھوتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I wash my hands')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I take a bath.</td>
+    <td data-label="Urdu Pronunciation">آئی ٹیک اے باتھ</td>
+    <td data-label="Meaning in Urdu">میں نہاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I take a bath')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I comb my hair.</td>
+    <td data-label="Urdu Pronunciation">آئی کوم مائی ہیر</td>
+    <td data-label="Meaning in Urdu">میں اپنے بال کنگھی کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I comb my hair')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I wear clean clothes.</td>
+    <td data-label="Urdu Pronunciation">آئی ویئر کلین کلاتھز</td>
+    <td data-label="Meaning in Urdu">میں صاف کپڑے پہنتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I wear clean clothes')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I go to the hospital.</td>
+    <td data-label="Urdu Pronunciation">آئی گو ٹو دی ہاسپٹل</td>
+    <td data-label="Meaning in Urdu">میں ہسپتال جاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I go to the hospital')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I feel tired.</td>
+    <td data-label="Urdu Pronunciation">آئی فیِل ٹائرڈ</td>
+    <td data-label="Meaning in Urdu">میں تھکا ہوا محسوس کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I feel tired')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I do exercise.</td>
+    <td data-label="Urdu Pronunciation">آئی ڈو ایکسرسائز</td>
+    <td data-label="Meaning in Urdu">میں ورزش کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I do exercise')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I sleep early.</td>
+    <td data-label="Urdu Pronunciation">آئی سلیپ ارلی</td>
+    <td data-label="Meaning in Urdu">میں جلدی سوتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I sleep early')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I wake up fresh.</td>
+    <td data-label="Urdu Pronunciation">آئی ویک اپ فریش</td>
+    <td data-label="Meaning in Urdu">میں تروتازہ اٹھتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I wake up fresh')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I eat healthy food.</td>
+    <td data-label="Urdu Pronunciation">آئی ایٹ ہیلتھی فوڈ</td>
+    <td data-label="Meaning in Urdu">میں صحت مند کھانا کھاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I eat healthy food')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I drink enough water.</td>
+    <td data-label="Urdu Pronunciation">آئی ڈرنک انف واٹر</td>
+    <td data-label="Meaning in Urdu">میں کافی پانی پیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I drink enough water')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I check my blood pressure.</td>
+    <td data-label="Urdu Pronunciation">آئی چیک مائی بلڈ پریشر</td>
+    <td data-label="Meaning in Urdu">میں اپنا بلڈ پریشر چیک کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I check my blood pressure')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="health-body">
+    <td data-label="English Word">I stay healthy.</td>
+    <td data-label="Urdu Pronunciation">آئی اسٹے ہیلتھی</td>
+    <td data-label="Meaning in Urdu">میں صحت مند رہتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I stay healthy')">
+        🔊
+      </button>
+    </td>
+  </tr>
+
+
+
+ <!--===================== Category 7: Home & Family============== -->
+<tr class="category-heading" data-category="home-family">
+    <td colspan="4">
+      <h2>
+        <span class="toggle-icon">+</span>
+        7. Home & Family (گھر اور خاندان)
+      </h2>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I live in a house.</td>
+    <td data-label="Urdu Pronunciation">آئی لیو ان اے ہاؤس</td>
+    <td data-label="Meaning in Urdu">میں ایک گھر میں رہتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I live in a house')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I clean my room.</td>
+    <td data-label="Urdu Pronunciation">آئی کلین مائی روم</td>
+    <td data-label="Meaning in Urdu">میں اپنا کمرہ صاف کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I clean my room')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I wash the dishes.</td>
+    <td data-label="Urdu Pronunciation">آئی واش دی ڈشز</td>
+    <td data-label="Meaning in Urdu">میں برتن دھوتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I wash the dishes')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I sweep the floor.</td>
+    <td data-label="Urdu Pronunciation">آئی سویپ دی فلور</td>
+    <td data-label="Meaning in Urdu">میں فرش جھاڑتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I sweep the floor')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I cook for my family.</td>
+    <td data-label="Urdu Pronunciation">آئی کک فار مائی فیملی</td>
+    <td data-label="Meaning in Urdu">میں اپنے خاندان کے لیے کھانا پکاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I cook for my family')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I set the table.</td>
+    <td data-label="Urdu Pronunciation">آئی سیٹ دی ٹیبل</td>
+    <td data-label="Meaning in Urdu">میں کھانے کی میز سجاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I set the table')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I watch TV with my family.</td>
+    <td data-label="Urdu Pronunciation">آئی واچ ٹی وی ود مائی فیملی</td>
+    <td data-label="Meaning in Urdu">میں اپنے خاندان کے ساتھ ٹی وی دیکھتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I watch TV with my family')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I talk to my parents.</td>
+    <td data-label="Urdu Pronunciation">آئی ٹاک ٹو مائی پیرنٹس</td>
+    <td data-label="Meaning in Urdu">میں اپنے والدین سے بات کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I talk to my parents')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I play with my children.</td>
+    <td data-label="Urdu Pronunciation">آئی پلے ود مائی چلڈرن</td>
+    <td data-label="Meaning in Urdu">میں اپنے بچوں کے ساتھ کھیلتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I play with my children')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I read a story to my kids.</td>
+    <td data-label="Urdu Pronunciation">آئی ریڈ اے سٹوری ٹو مائی کڈز</td>
+    <td data-label="Meaning in Urdu">میں اپنے بچوں کو کہانی سناتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I read a story to my kids')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I water the plants.</td>
+    <td data-label="Urdu Pronunciation">آئی واٹر دی پلانٹس</td>
+    <td data-label="Meaning in Urdu">میں پودوں کو پانی دیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I water the plants')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I feed the pets.</td>
+    <td data-label="Urdu Pronunciation">آئی فیڈ دی پیٹس</td>
+    <td data-label="Meaning in Urdu">میں پالتو جانوروں کو کھانا دیتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I feed the pets')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I repair things at home.</td>
+    <td data-label="Urdu Pronunciation">آئی ریپیئر تھنگز ایٹ ہوم</td>
+    <td data-label="Meaning in Urdu">میں گھر کی چیزیں ٹھیک کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I repair things at home')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I wash my clothes.</td>
+    <td data-label="Urdu Pronunciation">آئی واش مائی کلاتھز</td>
+    <td data-label="Meaning in Urdu">میں اپنے کپڑے دھوتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I wash my clothes')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I hang clothes to dry.</td>
+    <td data-label="Urdu Pronunciation">آئی ہینگ کلاتھز ٹو ڈرائی</td>
+    <td data-label="Meaning in Urdu">میں کپڑے سکھانے کے لیے لٹکاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I hang clothes to dry')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I iron the clothes.</td>
+    <td data-label="Urdu Pronunciation">آئی آئرن دی کلاتھز</td>
+    <td data-label="Meaning in Urdu">میں کپڑوں پر استری کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I iron the clothes')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I lock the door.</td>
+    <td data-label="Urdu Pronunciation">آئی لاک دی ڈور</td>
+    <td data-label="Meaning in Urdu">میں دروازہ بند کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I lock the door')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I open the windows.</td>
+    <td data-label="Urdu Pronunciation">آئی اوپن دی ونڈوز</td>
+    <td data-label="Meaning in Urdu">میں کھڑکیاں کھولتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I open the windows')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I decorate my home.</td>
+    <td data-label="Urdu Pronunciation">آئی ڈیکوریٹ مائی ہوم</td>
+    <td data-label="Meaning in Urdu">میں اپنے گھر کو سجاتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I decorate my home')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="home-family">
+    <td data-label="English Word">I rest on the sofa.</td>
+    <td data-label="Urdu Pronunciation">آئی ریسٹ آن دی صوفہ</td>
+    <td data-label="Meaning in Urdu">میں صوفے پر آرام کرتا ہوں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('I rest on the sofa')">
+        🔊
+      </button>
+    </td>
+  </tr>
+
+
+  <!--==================== Category 8: Weather & Seasons ============================-->
+<tr class="category-heading" data-category="weather-seasons">
+    <td colspan="4">
+      <h2>
+        <span class="toggle-icon">+</span>
+        8. Weather & Seasons (موسم اور موسم)
+      </h2>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">It is sunny today.</td>
+    <td data-label="Urdu Pronunciation">اٹ از سنی ٹوڈے</td>
+    <td data-label="Meaning in Urdu">آج دھوپ ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('It is sunny today')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">It is raining.</td>
+    <td data-label="Urdu Pronunciation">اٹ از ریننگ</td>
+    <td data-label="Meaning in Urdu">بارش ہو رہی ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('It is raining')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">It is cloudy.</td>
+    <td data-label="Urdu Pronunciation">اٹ از کلاوڈی</td>
+    <td data-label="Meaning in Urdu">بادل ہیں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('It is cloudy')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">It is windy.</td>
+    <td data-label="Urdu Pronunciation">اٹ از ونڈی</td>
+    <td data-label="Meaning in Urdu">ہوا چل رہی ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('It is windy')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">It is cold.</td>
+    <td data-label="Urdu Pronunciation">اٹ از کولڈ</td>
+    <td data-label="Meaning in Urdu">سردی ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('It is cold')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">It is hot.</td>
+    <td data-label="Urdu Pronunciation">اٹ از ہاٹ</td>
+    <td data-label="Meaning in Urdu">گرمی ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('It is hot')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">It is snowing.</td>
+    <td data-label="Urdu Pronunciation">اٹ از سنوونگ</td>
+    <td data-label="Meaning in Urdu">برفباری ہو رہی ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('It is snowing')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">The weather is nice.</td>
+    <td data-label="Urdu Pronunciation">دی ویذر از نائس</td>
+    <td data-label="Meaning in Urdu">موسم اچھا ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('The weather is nice')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">The weather is bad.</td>
+    <td data-label="Urdu Pronunciation">دی ویذر از بیڈ</td>
+    <td data-label="Meaning in Urdu">موسم خراب ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('The weather is bad')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">It is foggy.</td>
+    <td data-label="Urdu Pronunciation">اٹ از فوگی</td>
+    <td data-label="Meaning in Urdu">دھند ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('It is foggy')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">The sun is shining.</td>
+    <td data-label="Urdu Pronunciation">دی سن از شائننگ</td>
+    <td data-label="Meaning in Urdu">سورج نکل رہا ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('The sun is shining')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">The moon is bright.</td>
+    <td data-label="Urdu Pronunciation">دی مون از برائٹ</td>
+    <td data-label="Meaning in Urdu">چاند چمک رہا ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('The moon is bright')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">The stars are shining.</td>
+    <td data-label="Urdu Pronunciation">دی سٹارز آر شائننگ</td>
+    <td data-label="Meaning in Urdu">ستارے چمک رہے ہیں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('The stars are shining')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">It is spring.</td>
+    <td data-label="Urdu Pronunciation">اٹ از سپرنگ</td>
+    <td data-label="Meaning in Urdu">بہار ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('It is spring')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">It is summer.</td>
+    <td data-label="Urdu Pronunciation">اٹ از سمر</td>
+    <td data-label="Meaning in Urdu">گرمیوں کا موسم ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('It is summer')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">It is autumn.</td>
+    <td data-label="Urdu Pronunciation">اٹ از آٹم</td>
+    <td data-label="Meaning in Urdu">خزاں ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('It is autumn')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">It is winter.</td>
+    <td data-label="Urdu Pronunciation">اٹ از ونٹر</td>
+    <td data-label="Meaning in Urdu">سردیوں کا موسم ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('It is winter')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">The leaves are falling.</td>
+    <td data-label="Urdu Pronunciation">دی لیوز آر فالنگ</td>
+    <td data-label="Meaning in Urdu">پتے گر رہے ہیں۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('The leaves are falling')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">The river is frozen.</td>
+    <td data-label="Urdu Pronunciation">دی ریور از فروزن</td>
+    <td data-label="Meaning in Urdu">دریا جم گیا ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('The river is frozen')">
+        🔊
+      </button>
+    </td>
+  </tr>
+  <tr class="category-content" data-category="weather-seasons">
+    <td data-label="English Word">The rainbow is beautiful.</td>
+    <td data-label="Urdu Pronunciation">دی رینبو از بیوٹی فل</td>
+    <td data-label="Meaning in Urdu">قوس و قزح خوبصورت ہے۔</td>
+    <td>
+      <button class="listen-btn" onclick="speakWord('The rainbow is beautiful')">
+        🔊
+      </button>
+    </td>
+  </tr>
+
+ 
+
+
+  
+
+
+
+
+
+
+
+
+
+
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">📘 Learn English Grammar</div>
+        <p class="footer-text">
+          Master English Grammar with easy lessons, examples, and practice.
+        </p>
+
+        <p class="footer-copy">
+          © 2025 Learn English Grammar. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="eng.js"></script>
+</html>

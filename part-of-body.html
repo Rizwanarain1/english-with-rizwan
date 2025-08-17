@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Human Body Parts A to Z</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f6f9;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .part {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 12px 16px;
+      margin: 6px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .meaning {
+      color: #555;
+      font-size: 14px;
+      margin-left: 12px;
+    }
+
+    .listen-btn {
+      background: #27ae60;
+      border: none;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .listen-btn:hover {
+      background: #1e8449;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h2>👤 Human Body Parts (A to Z)</h2>
+
+  <div id="bodyParts"></div>
+
+  <script>
+    const bodyParts = [
+      {en:"Ankle", ur:"ٹخنہ"},
+      {en:"Arm", ur:"بازو"},
+      {en:"Back", ur:"کمر"},
+      {en:"Beard", ur:"داڑھی"},
+      {en:"Blood", ur:"خون"},
+      {en:"Bone", ur:"ہڈی"},
+      {en:"Brain", ur:"دماغ"},
+      {en:"Cheek", ur:"گال"},
+      {en:"Chest", ur:"چھاتی"},
+      {en:"Chin", ur:"ٹھوڑی"},
+      {en:"Ear", ur:"کان"},
+      {en:"Elbow", ur:"کہنی"},
+      {en:"Eye", ur:"آنکھ"},
+      {en:"Eyelash", ur:"پلک"},
+      {en:"Eyelid", ur:"پپوٹا"},
+      {en:"Face", ur:"چہرہ"},
+      {en:"Finger", ur:"انگلی"},
+      {en:"Fingernail", ur:"ناخن"},
+      {en:"Foot", ur:"پاؤں"},
+      {en:"Forehead", ur:"ماتھا"},
+      {en:"Hair", ur:"بال"},
+      {en:"Hand", ur:"ہاتھ"},
+      {en:"Head", ur:"سر"},
+      {en:"Heart", ur:"دل"},
+      {en:"Heel", ur:"ایڑی"},
+      {en:"Hip", ur:"کولہا"},
+      {en:"Jaw", ur:"جبڑا"},
+      {en:"Knee", ur:"گھٹنا"},
+      {en:"Leg", ur:"ٹانگ"},
+      {en:"Lips", ur:"ہونٹ"},
+      {en:"Liver", ur:"جگر"},
+      {en:"Mouth", ur:"منہ"},
+      {en:"Muscle", ur:"پٹھا"},
+      {en:"Nail", ur:"ناخن"},
+      {en:"Neck", ur:"گردن"},
+      {en:"Nose", ur:"ناک"},
+      {en:"Palm", ur:"ہتھیلی"},
+      {en:"Rib", ur:"پسلی"},
+      {en:"Shoulder", ur:"کندھا"},
+      {en:"Skeleton", ur:"ڈھانچہ"},
+      {en:"Skin", ur:"جلد"},
+      {en:"Skull", ur:"کھوپڑی"},
+      {en:"Stomach", ur:"پیٹ"},
+      {en:"Teeth", ur:"دانت"},
+      {en:"Thigh", ur:"ران"},
+      {en:"Throat", ur:"گلا"},
+      {en:"Thumb", ur:"انگوٹھا"},
+      {en:"Toe", ur:"پاؤں کی انگلی"},
+      {en:"Tongue", ur:"زبان"},
+      {en:"Tooth", ur:"دانت"},
+      {en:"Waist", ur:"کمر کا نچلا حصہ"},
+      {en:"Wrist", ur:"کلائی"}
+    ];
+
+    const container = document.getElementById("bodyParts");
+
+    bodyParts.forEach(part => {
+      const div = document.createElement("div");
+      div.className = "part";
+      div.innerHTML = `
+        <span><b>${part.en}</b> <span class="meaning">- ${part.ur}</span></span>
+        <button class="listen-btn">🔊 Listen</button>
+      `;
+      div.querySelector(".listen-btn").addEventListener("click", () => speak(part.en));
+      container.appendChild(div);
+    });
+
+    function speak(text) {
+      if (!("speechSynthesis" in window)) {
+        alert("Your browser does not support speech!");
+        return;
+      }
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "en-US";
+      utterance.rate = 0.9;
+      speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>
