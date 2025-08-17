@@ -1,140 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Human Body Parts A to Z</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Vocabulary</title>
+    <link rel="stylesheet" href="eng.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.jpeg" alt="Logo" class="logo-img">
+        <span>Learn English Grammar</span>
+      </div>
       
-      background: #f4f6f9;
-    }
+      <button class="toggle-btn" id="toggleBtn">&#9776;</button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
-    h2 {
-      text-align: center;
-      color: #2c3e50;
-      margin-bottom: 20px;
-    }
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>English Word</th>
+            <th>Urdu Pronunciation</th>
+            <th>Meaning in Urdu</th>
+            <th>Listen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <h1 class="title">Body Parts Vocabulary</h1>
 
-    .part {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: white;
-      padding: 12px 16px;
-      margin: 6px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+          <!-- Category 9: Body Parts -->
+          <tr class="category-heading" data-category="body-parts">
+            <td colspan="4">
+              <h2>
+                <span class="toggle-icon">+</span>
+                9. Body Parts (جسم کے حصے)
+              </h2>
+            </td>
+          </tr>
+          
+          <!-- Step 1: External Body Parts -->
+          <tr class="subcategory-heading" data-category="body-parts">
+            <td colspan="4">
+              <h3>External Body Parts (باہر کے جسم کے حصے)</h3>
+            </td>
+          </tr>
+          
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Head</td>
+            <td data-label="Urdu Pronunciation">ہیڈ</td>
+            <td data-label="Meaning in Urdu">سر</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Head')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Hair</td>
+            <td data-label="Urdu Pronunciation">ہیئر</td>
+            <td data-label="Meaning in Urdu">بال</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Hair')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Forehead</td>
+            <td data-label="Urdu Pronunciation">فورہیڈ</td>
+            <td data-label="Meaning in Urdu">پیشانی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Forehead')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Eye</td>
+            <td data-label="Urdu Pronunciation">آئی</td>
+            <td data-label="Meaning in Urdu">آنکھ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Eye')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Eyebrow</td>
+            <td data-label="Urdu Pronunciation">آئی برو</td>
+            <td data-label="Meaning in Urdu">بھنویں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Eyebrow')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Eyelash</td>
+            <td data-label="Urdu Pronunciation">آئی لیش</td>
+            <td data-label="Meaning in Urdu">پلک</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Eyelash')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Ear</td>
+            <td data-label="Urdu Pronunciation">ایئر</td>
+            <td data-label="Meaning in Urdu">کان</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Ear')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Nose</td>
+            <td data-label="Urdu Pronunciation">نوز</td>
+            <td data-label="Meaning in Urdu">ناک</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Nose')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Mouth</td>
+            <td data-label="Urdu Pronunciation">ماؤتھ</td>
+            <td data-label="Meaning in Urdu">منہ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Mouth')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Lips</td>
+            <td data-label="Urdu Pronunciation">لبس</td>
+            <td data-label="Meaning in Urdu">ہونٹ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Lips')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Teeth</td>
+            <td data-label="Urdu Pronunciation">ٹیٹھ</td>
+            <td data-label="Meaning in Urdu">دانت</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Teeth')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Tongue</td>
+            <td data-label="Urdu Pronunciation">ٹنگ</td>
+            <td data-label="Meaning in Urdu">زبان</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Tongue')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Chin</td>
+            <td data-label="Urdu Pronunciation">چِن</td>
+            <td data-label="Meaning in Urdu">ٹھوڑی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Chin')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Neck</td>
+            <td data-label="Urdu Pronunciation">نیک</td>
+            <td data-label="Meaning in Urdu">گردن</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Neck')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Shoulder</td>
+            <td data-label="Urdu Pronunciation">شولڈر</td>
+            <td data-label="Meaning in Urdu">کندھا</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Shoulder')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Arm</td>
+            <td data-label="Urdu Pronunciation">آرم</td>
+            <td data-label="Meaning in Urdu">بازو</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Arm')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Elbow</td>
+            <td data-label="Urdu Pronunciation">ایل بو</td>
+            <td data-label="Meaning in Urdu">کہنی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Elbow')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Hand</td>
+            <td data-label="Urdu Pronunciation">ہینڈ</td>
+            <td data-label="Meaning in Urdu">ہاتھ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Hand')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Fingers</td>
+            <td data-label="Urdu Pronunciation">فنگرز</td>
+            <td data-label="Meaning in Urdu">انگلیاں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Fingers')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Thumb</td>
+            <td data-label="Urdu Pronunciation">تھمب</td>
+            <td data-label="Meaning in Urdu">انگوٹھا</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Thumb')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Chest</td>
+            <td data-label="Urdu Pronunciation">چیسٹ</td>
+            <td data-label="Meaning in Urdu">سینہ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Chest')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Stomach</td>
+            <td data-label="Urdu Pronunciation">اسٹمک</td>
+            <td data-label="Meaning in Urdu">پیٹ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Stomach')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Back</td>
+            <td data-label="Urdu Pronunciation">بیک</td>
+            <td data-label="Meaning in Urdu">پیٹھ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Back')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Leg</td>
+            <td data-label="Urdu Pronunciation">لیگ</td>
+            <td data-label="Meaning in Urdu">ٹانگ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Leg')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Knee</td>
+            <td data-label="Urdu Pronunciation">نی</td>
+            <td data-label="Meaning in Urdu">گھٹنا</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Knee')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Foot</td>
+            <td data-label="Urdu Pronunciation">فُٹ</td>
+            <td data-label="Meaning in Urdu">پاؤں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Foot')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Toes</td>
+            <td data-label="Urdu Pronunciation">ٹوز</td>
+            <td data-label="Meaning in Urdu">پاؤں کی انگلیاں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Toes')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Heel</td>
+            <td data-label="Urdu Pronunciation">ہیل</td>
+            <td data-label="Meaning in Urdu">ایڑی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Heel')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          
+          <!-- Step 2: Internal Organs -->
+          <tr class="subcategory-heading" data-category="body-parts">
+            <td colspan="4">
+              <h3>Internal Organs (اندرونی اعضا)</h3>
+            </td>
+          </tr>
+          
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Brain</td>
+            <td data-label="Urdu Pronunciation">برین</td>
+            <td data-label="Meaning in Urdu">دماغ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Brain')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Heart</td>
+            <td data-label="Urdu Pronunciation">ہارٹ</td>
+            <td data-label="Meaning in Urdu">دل</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Heart')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Lungs</td>
+            <td data-label="Urdu Pronunciation">لنگز</td>
+            <td data-label="Meaning in Urdu">پھیپھڑے</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Lungs')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Liver</td>
+            <td data-label="Urdu Pronunciation">لیور</td>
+            <td data-label="Meaning in Urdu">جگر</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Liver')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Stomach</td>
+            <td data-label="Urdu Pronunciation">اسٹمک</td>
+            <td data-label="Meaning in Urdu">معدہ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Stomach')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Intestines</td>
+            <td data-label="Urdu Pronunciation">انٹیسٹائنز</td>
+            <td data-label="Meaning in Urdu">آنتیں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Intestines')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Kidneys</td>
+            <td data-label="Urdu Pronunciation">کڈنیز</td>
+            <td data-label="Meaning in Urdu">گردے</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Kidneys')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Bladder</td>
+            <td data-label="Urdu Pronunciation">بلیڈر</td>
+            <td data-label="Meaning in Urdu">مثانہ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Bladder')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Pancreas</td>
+            <td data-label="Urdu Pronunciation">پینکریاز</td>
+            <td data-label="Meaning in Urdu">لبلبہ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Pancreas')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Spleen</td>
+            <td data-label="Urdu Pronunciation">سپلین</td>
+            <td data-label="Meaning in Urdu">تلی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Spleen')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Esophagus</td>
+            <td data-label="Urdu Pronunciation">ایسوفیگس</td>
+            <td data-label="Meaning in Urdu">غذائی نالی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Esophagus')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Trachea</td>
+            <td data-label="Urdu Pronunciation">ٹریکیا</td>
+            <td data-label="Meaning in Urdu">ہوا کی نالی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Trachea')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Gallbladder</td>
+            <td data-label="Urdu Pronunciation">گیل بلیڈر</td>
+            <td data-label="Meaning in Urdu">پتہ</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Gallbladder')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Uterus</td>
+            <td data-label="Urdu Pronunciation">یوٹرس</td>
+            <td data-label="Meaning in Urdu">بچہ دانی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Uterus')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Veins</td>
+            <td data-label="Urdu Pronunciation">وینز</td>
+            <td data-label="Meaning in Urdu">رگیں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Veins')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Arteries</td>
+            <td data-label="Urdu Pronunciation">آرٹریز</td>
+            <td data-label="Meaning in Urdu">شریانیں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Arteries')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Blood</td>
+            <td data-label="Urdu Pronunciation">بلڈ</td>
+            <td data-label="Meaning in Urdu">خون</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Blood')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Diaphragm</td>
+            <td data-label="Urdu Pronunciation">ڈایافرام</td>
+            <td data-label="Meaning in Urdu">جھلی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Diaphragm')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          
+          <!-- Step 3: Skeletal System -->
+          <tr class="subcategory-heading" data-category="body-parts">
+            <td colspan="4">
+              <h3>Skeletal System (Bones - ہڈیاں)</h3>
+            </td>
+          </tr>
+          
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Skull</td>
+            <td data-label="Urdu Pronunciation">سکل</td>
+            <td data-label="Meaning in Urdu">کھوپڑی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Skull')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Mandible</td>
+            <td data-label="Urdu Pronunciation">مینڈیبل</td>
+            <td data-label="Meaning in Urdu">جبڑا</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Mandible')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Clavicle</td>
+            <td data-label="Urdu Pronunciation">کلاویکل</td>
+            <td data-label="Meaning in Urdu">کالر بون</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Clavicle')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Scapula</td>
+            <td data-label="Urdu Pronunciation">سکیپولا</td>
+            <td data-label="Meaning in Urdu">کندھے کی ہڈی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Scapula')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Sternum</td>
+            <td data-label="Urdu Pronunciation">سٹرنم</td>
+            <td data-label="Meaning in Urdu">سینہ کی ہڈی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Sternum')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Ribs</td>
+            <td data-label="Urdu Pronunciation">ربز</td>
+            <td data-label="Meaning in Urdu">پسلیاں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Ribs')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Humerus</td>
+            <td data-label="Urdu Pronunciation">ہیومرس</td>
+            <td data-label="Meaning in Urdu">بازو کی ہڈی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Humerus')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Radius</td>
+            <td data-label="Urdu Pronunciation">ریڈیس</td>
+            <td data-label="Meaning in Urdu">کلائی کی ہڈی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Radius')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Ulna</td>
+            <td data-label="Urdu Pronunciation">النا</td>
+            <td data-label="Meaning in Urdu">کلائی کی دوسری ہڈی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Ulna')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Vertebrae</td>
+            <td data-label="Urdu Pronunciation">ورٹیبری</td>
+            <td data-label="Meaning in Urdu">ریڑھ کی ہڈی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Vertebrae')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Pelvis</td>
+            <td data-label="Urdu Pronunciation">پیلوِس</td>
+            <td data-label="Meaning in Urdu">کولہے کی ہڈی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Pelvis')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Femur</td>
+            <td data-label="Urdu Pronunciation">فیمر</td>
+            <td data-label="Meaning in Urdu">ران کی ہڈی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Femur')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Patella</td>
+            <td data-label="Urdu Pronunciation">پیٹیلا</td>
+            <td data-label="Meaning in Urdu">گھٹنے کی ہڈی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Patella')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Tibia</td>
+            <td data-label="Urdu Pronunciation">ٹبیا</td>
+            <td data-label="Meaning in Urdu">پنڈلی کی بڑی ہڈی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Tibia')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Fibula</td>
+            <td data-label="Urdu Pronunciation">فائبولا</td>
+            <td data-label="Meaning in Urdu">پنڈلی کی چھوٹی ہڈی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Fibula')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Carpals</td>
+            <td data-label="Urdu Pronunciation">کارپلز</td>
+            <td data-label="Meaning in Urdu">کلائی کی چھوٹی ہڈیاں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Carpals')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Metacarpals</td>
+            <td data-label="Urdu Pronunciation">میٹاکارپلز</td>
+            <td data-label="Meaning in Urdu">ہاتھ کی درمیانی ہڈیاں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Metacarpals')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Phalanges</td>
+            <td data-label="Urdu Pronunciation">فالنجیز</td>
+            <td data-label="Meaning in Urdu">انگلیوں کی ہڈیاں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Phalanges')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Tarsals</td>
+            <td data-label="Urdu Pronunciation">ٹارسلز</td>
+            <td data-label="Meaning in Urdu">ٹخنے کی ہڈیاں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Tarsals')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Metatarsals</td>
+            <td data-label="Urdu Pronunciation">میٹاتارسلز</td>
+            <td data-label="Meaning in Urdu">پاؤں کی درمیانی ہڈیاں</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Metatarsals')">
+                🔊
+              </button>
+            </td>
+          </tr>
+          <tr class="category-content" data-category="body-parts">
+            <td data-label="English Word">Coccyx</td>
+            <td data-label="Urdu Pronunciation">کاکسکس</td>
+            <td data-label="Meaning in Urdu">دم کی ہڈی</td>
+            <td>
+              <button class="listen-btn" onclick="speakWord('Coccyx')">
+                🔊
+              </button>
+            </td>
+          </tr>
 
-    .meaning {
-      color: #555;
-      font-size: 14px;
-      margin-left: 12px;
-    }
+          <!-- Rest of your existing categories (1-8) would go here -->
+          <!-- I've omitted them to keep the response focused on the new content -->
+          
+        </tbody>
+      </table>
+    </div>
 
-    .listen-btn {
-      background: #27ae60;
-      border: none;
-      color: white;
-      padding: 6px 14px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">📘 Learn English Grammar</div>
+        <p class="footer-text">
+          Master English Grammar with easy lessons, examples, and practice.
+        </p>
 
-    .listen-btn:hover {
-      background: #1e8449;
-      transform: scale(1.05);
-    }
-  </style>
-</head>
-<body>
-  <h2>👤 Human Body Parts (A to Z)</h2>
-
-  <div id="bodyParts"></div>
-
-  <script>
-    const bodyParts = [
-      {en:"Ankle", ur:"ٹخنہ"},
-      {en:"Arm", ur:"بازو"},
-      {en:"Back", ur:"کمر"},
-      {en:"Beard", ur:"داڑھی"},
-      {en:"Blood", ur:"خون"},
-      {en:"Bone", ur:"ہڈی"},
-      {en:"Brain", ur:"دماغ"},
-      {en:"Cheek", ur:"گال"},
-      {en:"Chest", ur:"چھاتی"},
-      {en:"Chin", ur:"ٹھوڑی"},
-      {en:"Ear", ur:"کان"},
-      {en:"Elbow", ur:"کہنی"},
-      {en:"Eye", ur:"آنکھ"},
-      {en:"Eyelash", ur:"پلک"},
-      {en:"Eyelid", ur:"پپوٹا"},
-      {en:"Face", ur:"چہرہ"},
-      {en:"Finger", ur:"انگلی"},
-      {en:"Fingernail", ur:"ناخن"},
-      {en:"Foot", ur:"پاؤں"},
-      {en:"Forehead", ur:"ماتھا"},
-      {en:"Hair", ur:"بال"},
-      {en:"Hand", ur:"ہاتھ"},
-      {en:"Head", ur:"سر"},
-      {en:"Heart", ur:"دل"},
-      {en:"Heel", ur:"ایڑی"},
-      {en:"Hip", ur:"کولہا"},
-      {en:"Jaw", ur:"جبڑا"},
-      {en:"Knee", ur:"گھٹنا"},
-      {en:"Leg", ur:"ٹانگ"},
-      {en:"Lips", ur:"ہونٹ"},
-      {en:"Liver", ur:"جگر"},
-      {en:"Mouth", ur:"منہ"},
-      {en:"Muscle", ur:"پٹھا"},
-      {en:"Nail", ur:"ناخن"},
-      {en:"Neck", ur:"گردن"},
-      {en:"Nose", ur:"ناک"},
-      {en:"Palm", ur:"ہتھیلی"},
-      {en:"Rib", ur:"پسلی"},
-      {en:"Shoulder", ur:"کندھا"},
-      {en:"Skeleton", ur:"ڈھانچہ"},
-      {en:"Skin", ur:"جلد"},
-      {en:"Skull", ur:"کھوپڑی"},
-      {en:"Stomach", ur:"پیٹ"},
-      {en:"Teeth", ur:"دانت"},
-      {en:"Thigh", ur:"ران"},
-      {en:"Throat", ur:"گلا"},
-      {en:"Thumb", ur:"انگوٹھا"},
-      {en:"Toe", ur:"پاؤں کی انگلی"},
-      {en:"Tongue", ur:"زبان"},
-      {en:"Tooth", ur:"دانت"},
-      {en:"Waist", ur:"کمر کا نچلا حصہ"},
-      {en:"Wrist", ur:"کلائی"}
-    ];
-
-    const container = document.getElementById("bodyParts");
-
-    bodyParts.forEach(part => {
-      const div = document.createElement("div");
-      div.className = "part";
-      div.innerHTML = `
-        <span><b>${part.en}</b> <span class="meaning">- ${part.ur}</span></span>
-        <button class="listen-btn">🔊 Listen</button>
-      `;
-      div.querySelector(".listen-btn").addEventListener("click", () => speak(part.en));
-      container.appendChild(div);
-    });
-
-    function speak(text) {
-      if (!("speechSynthesis" in window)) {
-        alert("Your browser does not support speech!");
-        return;
-      }
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = "en-US";
-      utterance.rate = 0.9;
-      speechSynthesis.speak(utterance);
-    }
-  </script>
-</body>
+        <p class="footer-copy">
+          © 2025 Learn English Grammar. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="eng.js"></script>
 </html>
