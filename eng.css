@@ -592,6 +592,12 @@ tr:hover {
     font-size: 0.9rem;
   }
 }
+
+.body{
+  background-color: #53b1ef;
+  text-align: center;
+}
+
 /*============================= paragraph Areaaa =================*/
 
 
@@ -739,7 +745,7 @@ h2 {
 }
 
 
-/* ======================== parts of body =======================*/
+
 
 
 
