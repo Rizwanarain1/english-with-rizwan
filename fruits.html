@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruits & Vegetables</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .table-container {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background: #009879;
+      color: white;
+    }
+    button {
+      background: #009879;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #00755c;
+    }
+  </style>
+</head>
+<body>
+  <h1>🥭 Fruits & 🥦 Vegetables List (50)</h1>
+
+  <!-- Fruits -->
+  <h2>🥭 Fruits</h2>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>English</th>
+          <th>Urdu</th>
+          <th>Roman Urdu</th>
+          <th>🔊 Listen</th>
+        </tr>
+      </thead>
+      <tbody id="fruits-list"></tbody>
+    </table>
+  </div>
+
+  <!-- Vegetables -->
+  <h2>🥦 Vegetables</h2>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>English</th>
+          <th>Urdu</th>
+          <th>Roman Urdu</th>
+          <th>🔊 Listen</th>
+        </tr>
+      </thead>
+      <tbody id="veggies-list"></tbody>
+    </table>
+  </div>
+
+  <script>
+    const fruits = [
+      { en: "Apple", ur: "سیب", roman: "Seeb" },
+      { en: "Banana", ur: "کیلا", roman: "Kela" },
+      { en: "Grapes", ur: "انگور", roman: "Angoor" },
+      { en: "Orange", ur: "کینو", roman: "Kino" },
+      { en: "Lemon", ur: "لیموں", roman: "Lemon" },
+      { en: "Watermelon", ur: "تربوز", roman: "Tarbuz" },
+      { en: "Melon", ur: "خربوزہ", roman: "Kharboza" },
+      { en: "Mango", ur: "آم", roman: "Aam" },
+      { en: "Pineapple", ur: "انناس", roman: "Ananas" },
+      { en: "Peach", ur: "آڑو", roman: "Aadoo" },
+      { en: "Pear", ur: "ناشپاتی", roman: "Nashpati" },
+      { en: "Cherry", ur: "چیری", roman: "Cherry" },
+      { en: "Strawberry", ur: "اسٹرابیری", roman: "Strawberry" },
+      { en: "Kiwi", ur: "کیوی", roman: "Kiwi" },
+      { en: "Blueberry", ur: "بلیو بیری", roman: "Blueberry" },
+      { en: "Sweet Lime", ur: "موسمی", roman: "Mosami" },
+      { en: "Coconut", ur: "ناریل", roman: "Narial" },
+      { en: "Avocado", ur: "ایووکاڈو", roman: "Avocado" },
+      { en: "Guava", ur: "امرود", roman: "Amrood" },
+      { en: "Pomegranate", ur: "انار", roman: "Anar" },
+      { en: "Papaya", ur: "پپیتا", roman: "Papita" },
+      { en: "Apricot", ur: "خوبانی", roman: "Khubani" },
+      { en: "Green Apple", ur: "سبز سیب", roman: "Sabz Seeb" },
+      { en: "Plantain", ur: "کچا کیلا", roman: "Kacha Kela" },
+      { en: "Fig", ur: "انجیر", roman: "Anjeer" }
+    ];
+
+    const vegetables = [
+      { en: "Potato", ur: "آلو", roman: "Aloo" },
+      { en: "Onion", ur: "پیاز", roman: "Pyaaz" },
+      { en: "Garlic", ur: "لہسن", roman: "Lehsan" },
+      { en: "Tomato", ur: "ٹماٹر", roman: "Tamatar" },
+      { en: "Carrot", ur: "گاجر", roman: "Gajar" },
+      { en: "Corn", ur: "مکئی", roman: "Makki" },
+      { en: "Cucumber", ur: "کھیرا", roman: "Kheera" },
+      { en: "Chili", ur: "مرچ", roman: "Mirch" },
+      { en: "Capsicum", ur: "شملہ مرچ", roman: "Shimla Mirch" },
+      { en: "Spinach", ur: "پالک", roman: "Palak" },
+      { en: "Broccoli", ur: "بروکلی", roman: "Broccoli" },
+      { en: "Lettuce", ur: "سلاد پتہ", roman: "Salad Patta" },
+      { en: "Bottle Gourd", ur: "لوکی", roman: "Lauki" },
+      { en: "Eggplant", ur: "بینگن", roman: "Baingan" },
+      { en: "Cabbage", ur: "بند گوبھی", roman: "Band Gobhi" },
+      { en: "Cauliflower", ur: "گوبھی", roman: "Gobhi" },
+      { en: "Fenugreek", ur: "میتھی", roman: "Methi" },
+      { en: "Coriander", ur: "ہرا دھنیا", roman: "Hara Dhaniya" },
+      { en: "Mint", ur: "پودینہ", roman: "Podina" },
+      { en: "Mustard Leaves", ur: "ساروں کا ساگ", roman: "Saag" },
+      { en: "Green Beans", ur: "لوبیا", roman: "Lobia" },
+      { en: "Okra", ur: "بھنڈی", roman: "Bhindi" },
+      { en: "Turnip", ur: "شلجم", roman: "Shaljam" },
+      { en: "Radish", ur: "مولی", roman: "Mooli" },
+      { en: "Ginger", ur: "ادرک", roman: "Adrak" }
+    ];
+
+    function renderTable(data, elementId) {
+      const list = document.getElementById(elementId);
+      data.forEach(item => {
+        let row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${item.en}</td>
+          <td>${item.ur}</td>
+          <td>${item.roman}</td>
+          <td><button onclick="speak('${item.en}')">🔊 Listen</button></td>
+        `;
+        list.appendChild(row);
+      });
+    }
+
+    renderTable(fruits, "fruits-list");
+    renderTable(vegetables, "veggies-list");
+
+    function speak(text) {
+      let utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "en-US";
+      speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>
