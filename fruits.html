@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fruits & Vegetables</title>
+  <link rel="stylesheet" href="eng.css">
   <style>
+    
     body {
       font-family: Arial, sans-serif;
       background: #f4f4f4;
@@ -48,10 +50,30 @@
     button:hover {
       background: #00755c;
     }
+    #h1{
+      background-color: #009879;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
-  <h1>🥭 Fruits & 🥦 Vegetables List (50)</h1>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.jpeg" alt="Logo" class="logo-img">
+      <span>Learn English Grammar</span>
+    </div>
+    
+    <button class="toggle-btn" id="toggleBtn">&#9776;</button>
+    
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1 id="h1">🥭 Fruits & 🥦 Vegetables</h1>
 
   <!-- Fruits -->
   <h2>🥭 Fruits</h2>
@@ -165,5 +187,17 @@
       speechSynthesis.speak(utterance);
     }
   </script>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">📘 Learn English Grammar</div>
+    <p class="footer-text">Master English Grammar with easy lessons, examples, and practice.</p>
+   
+    <p class="footer-copy">© 2025 Learn English Grammar. All rights reserved.</p>
+  </div>
+</footer>
+
+  
+  <script src="eng.js"></script>
 </body>
 </html>
