@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -55,9 +56,27 @@ body {
   margin-left: 3rem;
 }
 
-.nav-links li a:hover {
-  color: #37b141;
-  text-decoration: underline;
+a {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* thoda neeche underline */
+  width: 0%;
+  height: 2px;
+  background: #68f4f7;
+  transition: width 0.3s ease-in-out;
+}
+
+a:hover::after {
+  width: 100%; /* animation se underline spread hoga */
 }
 
 .toggle-btn {
@@ -114,7 +133,7 @@ body {
   font-weight: bold;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer; /* now cursor is always pointer */
+  cursor: pointer; 
 }
 
 .list-item:hover {
